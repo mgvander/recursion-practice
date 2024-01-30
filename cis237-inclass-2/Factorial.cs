@@ -13,7 +13,7 @@ namespace cis237_inclass_2
         // We also know that 4! can be represented as 4 * 3!
 
         // Recursive method to solve Factorial
-        public int SolveFactorial(int number)
+        public int Solve(int number)
         {
             // We need a base case
             // If we don't stop recursing, bad things will happen.
@@ -24,7 +24,7 @@ namespace cis237_inclass_2
             }
 
             // If we are not at the base case, recurse to find solution.
-            return number * SolveFactorial(number - 1);
+            return number * Solve(number - 1);
 
             //int recursiveResult = SolveFactorial(number - 1);
             //int result = number * recursiveResult;

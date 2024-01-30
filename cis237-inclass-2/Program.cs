@@ -17,7 +17,7 @@ namespace cis237_inclass_2
 
                 Console.WriteLine("Solve 5!");
                 Console.Write("The answer is: ");
-                Console.WriteLine(factorial.SolveFactorial(5));
+                Console.WriteLine(factorial.Solve(5));
 
                 // What happens when we do 33!
                 //Console.WriteLine("Solve 33!");
@@ -30,8 +30,13 @@ namespace cis237_inclass_2
             else
             {
                 // Do Tower of Hanoi
+                TowerOFHanoi hanoi = new TowerOFHanoi();
+                hanoi.Solve();
+
             }
 
         }
+
     }
+
 }
